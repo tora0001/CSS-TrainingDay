@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Træningsbanen</title>
+  </head>
+  <body>
+    <header>
+      <h1>Velkommen til CSS træningsbanen</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#">Om CSS</a></li>
+        <li><a href="#">Selektorer</a></li>
+        <li><a href="#">Properties</a></li>
+        <li><a href="#">Box-modellen</a></li>
+        <li><a href="#">Enheder</a></li>
+        <li><a href="#">Fonte og Farver</a></li>
+      </ul>
+    </nav>
+
+    <section>
+      <h1>Om CSS</h1>
+      <h2>CSS er en del af den hellige trilogi:</h2>
+      <p>
+        <img src="images/html_logo.png" alt="HTML shield logo" >
+        <img src="images/css_logo.png" alt="CSS shield logo" >
+        <img src="images/js_logo.png" alt="JS shield logo" >
+      </p>
+      <p>Hvor HTML tager sig af strukturen, og JavaScript tager sig af funktionalitet og interaktivitet, så håndterer CSS udseendet, hvordan siden skal <i>styles</i>.</p>
+    </section>
+    <section>
+      <h1>Selectorer</h1>
+      <h2>Nogle af de grundlæggende selectorer i CSS:</h2>
+      <dl>
+        <dt><em>tagname</em></dt>
+        <dd>HTML-navnet - for eksempel <code>section</code> for <code>&lt;section&gt;</code>.</dd>
+        <dt>#</dt>
+        <dd>id - for eksempel <code>#about</code> for <code>id="about"</code>.</dd>
+        <dt>.</dt>
+        <dd>klasse - for eksempel <code>.codebox</code> for <code>class="codebox"</code>.</dd>
+      </dl>
+      <p>Lær og øv flere selectorer på <a href="https://flukeout.github.io/" target="_blank">CSS Diner</a>.</p>
+    </section>
+    <section>
+      <h1>Udvalgte properties</h1>
+      <h2>Det her er nogle af de properties vi har set:</h2>
+      <ul>
+        <li>color, background-color</li>
+        <li>font-family, font-size, font-weight</li>
+        <li>width, height, min-width, max-width</li>
+        <li>margin, padding</li>
+        <li>border</li>
+        <li>box-shadow</li>
+      </ul>
+    </section>
+    <section>
+      <h1>Box-modellen</h1>
+      <h2>Alle HTML elementer er "pakket" ind i en boks, med margin, border og padding.</h2>
+      <div id="box">
+        <div id="margin" class="dottedborder">
+          Margin
+          <div id="border" class="thinborder">
+            Border
+            <div id="padding" class="dottedborder">
+              Padding
+              <div id="content" class="thinborder">
+                Content
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p>Størrelsen på boksen bestemmes af content - altså mere tekst skubber til boksens størrelse.<br>
+      Bortset fra border er lagene "usynlige" - eller det vil sige, margin er samme farve som parents baggrund, og padding er samme farve som boksens egen baggrund.</p>
+    </section>
+    <section>
+      <h1>Enheder</h1>
+      <h2>Når man skal angive afstande i sit design, kan man bruge flere forskellige enheder</h2>
+      <p>De mest populære (som vi skal bruge) er:</p>
+      <dl>
+        <dt>px</dt>
+        <dd>pixels - den bruger vi kun når vi er nødt til at være meget præcis</dd>
+        <dt>%</dt>
+        <dd>procent - den er altid god, tilpasser til % af elementets oprindelige størrelse, eller den contentboks det vises i</dd>
+        <dt>vw</dt>
+        <dd>viewport width - 1vw svarer til 1% af vinduets bredde, 100vw er hele vinduets bredde. Den er effektiv til at tilpasse til skærmstørrelser.</dd>
+        <dt>vh</dt>
+        <dd>viewport height - 1vh svarer til 1% af vinduets højde, 100vh er hele vinduets højde. Effektiv når vi vil have noget til at fylde skærmen ud.</dd>
+        <dt>em</dt>
+        <dd>skriftstørrelsen - 1em svarer cirka til bredden af et M i den valgte skrift. Rigtig god når man vil lave afstande rundt om tekst, der passer til det aktuelle zoom-niveau</dd>
+        <dt>rem</dt>
+        <dd>dokumentets skriftstørrelse - den skriftstørrelse der er sat på <code>&lt;html&gt;</code> elementet. Til forskel fra <b>em</b> så varierer den ikke fra fx <code>h1</code> til <code>p</code>.</dd>
+      </dl>
+      <p>Husk at 0 - altså ingen afstand - ikke behøver nogen enhed. 0kr. er trods alt det samme som 0€.</p>
+      <p>Se flere på <a href="https://www.w3schools.com/cssref/css_units.php">w3schools</a>.</p>
+    </section>
+    <section>
+      <h1>Fonte og Farver</h1>
+
+    </section>
+  </body>
+</html>
