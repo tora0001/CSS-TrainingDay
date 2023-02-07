@@ -1,0 +1,41 @@
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+  color: black;
+  background-color: red;
+}
+
+header {
+  background-color: yellow;
+}
+
+section {
+  color: darkblue;
+  background-color: lightseagreen;
+}
+
+h2 {
+  color: brown;
+}
+
+.codebox {
+  color: purple;
+}
+
+.komher {
+  color: black;
+}
+
+section .codebox {
+  color: green;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  background-color: black;
+}
