@@ -20,16 +20,21 @@ h2 {
   color: brown;
 }
 
+#about {
+  background-color: grey;
+}
+
+#boxmodel,
+#units {
+  background-color: violet;
+}
+
 .codebox {
-  color: purple;
+  background-color: teal;
 }
 
-.komher {
-  color: black;
-}
-
-section .codebox {
-  color: green;
+section.codebox {
+  background-color: teal;
 }
 
 nav ul {

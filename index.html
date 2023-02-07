@@ -9,22 +9,22 @@
   </head>
   <body>
     <header>
-      <h1 id="main" class="codebox komher">Velkommen til CSS træningsbanen</h1>
+      <h1>Velkommen til CSS træningsbanen</h1>
     </header>
     <nav>
       <ul>
-        <li><a href="#">Om CSS</a></li>
-        <li><a href="#">Selektorer</a></li>
-        <li><a href="#">Properties</a></li>
-        <li><a href="#">Box-modellen</a></li>
-        <li><a href="#">Enheder</a></li>
-        <li><a href="#">Fonte og Farver</a></li>
+        <li><a href="#om">Om CSS</a></li>
+        <li><a href="#selectors">Selektorer</a></li>
+        <li><a href="#properties">Properties</a></li>
+        <li><a href="#boxmodel">Box-modellen</a></li>
+        <li><a href="#units">Enheder</a></li>
+        <li><a href="#fonts">Fonte og Farver</a></li>
       </ul>
     </nav>
 
-    <section>
-      <h1 id="gain" class="codebox">Om CSS</h1>
-      <h2 class="codebox komher">CSS er en del af den hellige trilogi:</h2>
+    <section id="about">
+      <h1 class="codebox">Om CSS</h1>
+      <h2>CSS er en del af den hellige trilogi:</h2>
       <p>
         <img src="images/html_logo.png" alt="HTML shield logo" >
         <img src="images/css_logo.png" alt="CSS shield logo" >
@@ -32,7 +32,7 @@
       </p>
       <p>Hvor <b>HTML</b> tager sig af strukturen, og <b>JavaScript</b> tager sig af funktionalitet og interaktivitet, så håndterer <b>CSS</b> udseendet, hvordan siden skal <i>styles</i>.</p>
     </section>
-    <section>
+    <section id="selectors" class="codebox otherclass">
       <h1>Selectorer</h1>
       <h2>Nogle af de grundlæggende selectorer i CSS:</h2>
       <dl>
@@ -45,7 +45,7 @@
       </dl>
       <p>Lær og øv flere selectorer på <a href="https://flukeout.github.io/" target="_blank">CSS Diner</a>.</p>
     </section>
-    <section>
+    <section id="properties" class="codebox otherclass">
       <h1>Udvalgte properties</h1>
       <h2>Det her er nogle af de properties vi har set:</h2>
       <ul>
@@ -57,7 +57,7 @@
         <li>box-shadow</li>
       </ul>
     </section>
-    <section>
+    <section id="boxmodel">
       <h1>Box-modellen</h1>
       <h2>Alle HTML elementer er "pakket" ind i en boks, med margin, border og padding.</h2>
       <div id="box">
@@ -77,7 +77,7 @@
       <p>Størrelsen på boksen bestemmes af content - altså mere tekst skubber til boksens størrelse.<br>
       Bortset fra border er lagene "usynlige" - eller det vil sige, margin er samme farve som parents baggrund, og padding er samme farve som boksens egen baggrund.</p>
     </section>
-    <section>
+    <section id="units">
       <h1>Enheder</h1>
       <h2>Når man skal angive afstande i sit design, kan man bruge flere forskellige enheder</h2>
       <p>De mest populære (som vi skal bruge) er:</p>
@@ -98,7 +98,7 @@
       <p>Husk at 0 - altså ingen afstand - ikke behøver nogen enhed. 0kr. er trods alt det samme som 0€.</p>
       <p>Se flere på <a href="https://www.w3schools.com/cssref/css_units.php">w3schools</a>.</p>
     </section>
-    <section>
+    <section id="fonts">
       <h1>Fonte og Farver</h1>
       <h2>Når vi taler om styling er farver og skrifttyper noget af det vigtigste</h2>
       <p>Næst efter marginer kommer nok farver.</p>
